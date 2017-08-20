@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Vue componentes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body>
+    <main>
+      <h1 class="titulo">Aprendiendo Vue - Ejercicio emoticon</h1>
+      <emoticon-face></emoticon-face>
+      <hr>
+      <pre>{{ $data }}</pre>
+    </main>
+
+    <template id="emoticon-template">
+     <div class="container">
+       <img :src="url" :alt="url" class="emoticon">
+    </div>
+    </template>
+
+    <!--Instacias vue  -->
+    <script src="https://unpkg.com/vue@2.4.1"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js "></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js "></script>
+    <script src="js/main.js "></script>
+  </body>
+
+</html>
